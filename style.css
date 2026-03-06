@@ -315,3 +315,163 @@
     .img-wrapper img {
         cursor: zoom-in;
     }
+    /* ==========================================
+   NOVO ESTILO DO RODAPÉ (FOOTER PREMIUM)
+   ========================================== */
+.site-footer {
+    /* 1. Cores e Fundo degradê moderno */
+    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); /* Roxo vibrante moderno */
+    color: #ffffff;
+    
+    /* 2. Separação do Site (margin-top bem grande) */
+    margin-top: 120px; 
+    
+    /* 3. Centralização e Layout */
+    width: 100%;
+    padding: 60px 0 20px 0; /* Padding superior grande */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* 4. Sombra para destacar do site */
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    
+    /* Garante centralização total interna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 90%; /* Ocupa 90% da tela em dispositivos menores */
+    margin: 0 auto;
+    text-align: center; /* Centraliza todo o texto por padrão */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as colunas */
+    gap: 40px; /* Espaço entre as colunas */
+    margin-bottom: 50px;
+}
+
+.footer-secao {
+    flex: 1;
+    min-width: 280px; /* Impede que fiquem muito espremidas */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo da coluna */
+}
+
+/* Estilo do Título Principal/Logo */
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffeaa7; /* Amarelo clarinho de destaque */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.footer-secao h3 {
+    color: #ffeaa7; /* Amarelo clarinho para os títulos secundários */
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Linha decorativa embaixo do título (centralizada) */
+.footer-secao h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #ffeaa7;
+    border-radius: 2px;
+}
+
+.footer-secao p {
+    color: #f1f1f1;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 1rem;
+    max-width: 350px; /* Limita a largura do texto para centralizar melhor */
+}
+
+.footer-secao span {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+/* Estilo dos Ícones de Redes Sociais (Vibrantes) */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    background-color: rgba(255,255,255,0.2); /* Fundo sutil */
+    padding: 12px;
+    border-radius: 50%; /* Faz o ícone circular */
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    /* Faz os ícones ficarem brancos por padrão */
+    filter: brightness(0) invert(1); 
+}
+
+/* Efeito de Hover nas Redes Sociais */
+.social-icons a:hover {
+    background-color: #ffeaa7; /* Amarelo ao passar o mouse */
+    transform: translateY(-5px) scale(1.1); /* Sobe um pouquinho */
+}
+
+.social-icons a:hover img {
+    /* Volta a cor original do ícone no hover */
+    filter: none; 
+}
+
+/* Faixa Inferior Centralizada */
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,0.15); /* Linha divisória sutil */
+    font-size: 0.9rem;
+    color: #dfe6e9;
+}
+
+.desenvolvido {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #b2bec3;
+}
+
+/* Responsividade (Celular) */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 40px 0 20px 0;
+        margin-top: 80px; /* Margin um pouco menor no celular */
+    }
+    
+    .footer-content {
+        flex-direction: column; /* Colunas viram linhas */
+        gap: 30px;
+    }
+    
+    .footer-logo {
+        font-size: 1.6rem;
+    }
+}
