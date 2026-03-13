@@ -7,51 +7,65 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
     <header class="navbar">
-        <h1>Portfólio de Decorações</h1>
+        <div class="logo-area">
+            <h1>
+                <a href="index.html" style="text-decoration: none; color: var(--cor-roxo-medio);">
+                    Sua Festa Inesquecível
+                </a>
+            </h1>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="main-menu-lista">
+                <li><a href="index.html">Decorações</a></li>
+                <li><a href="about.html">Como Funciona</a></li>
+                <li><a href="contact.html">Onde Estamos</a></li>
+            </ul>
+        </nav>
+
         <div class="menu-container">
-            <button class="menu-toggler-btn" id="menuToggler">Todas as decorações ▼</button>
+            <button class="menu-toggler-btn" id="menuToggler">Categorias ▼</button>
             <nav class="menu-dropdown-content" id="menuDropdown">
                 <ul class="menu-lista">
-                    <li><a href="#dec1">1. Jardim Encantado</a></li>
-                    <li><a href="#dec2">2. Frozen</a></li>
-                    <li><a href="#dec3">3. Ursinho Bobbie</a></li>
-                    <li><a href="#dec4">4. Dinossauro</a></li>
-                    <li><a href="#dec5">5. Minecraft</a></li>
-                    <li><a href="#dec6">6. Casa da Gabby</a></li>
-                    <li><a href="#dec7">7. Astronauta</a></li>
-                    <li><a href="#dec8">8. Roblox</a></li>
-                    <li><a href="#dec9">9. Arraial</a></li>
-                    <li><a href="#dec10">10. Hot Wheels</a></li>
-                    <li><a href="#dec11">11. Stitch</a></li>
-                    <li><a href="#dec12">12. Minnie</a></li>
-                    <li><a href="#dec13">13. Safári</a></li>
-                    <li><a href="#dec14">14. Chá Revelação (Mod. 2)</a></li>
-                    <li><a href="#dec15">15. Chá Revelação (Mod. 1)</a></li>
-                    <li><a href="#dec16">16. Boteco</a></li>
-                    <li><a href="#dec17">17. Homem-Aranha</a></li>
-                    <li><a href="#dec18">18. Patrulha Canina</a></li>
-                    <li><a href="#dec19">19. Neon</a></li>
-                    <li><a href="#dec20">20. Gamer</a></li>
-                    <li><a href="#dec21">21. Super Mario</a></li>
-                    <li><a href="#dec22">22. Sonic</a></li>
-                    <li><a href="#dec23">23. Futebol</a></li>
-                    <li><a href="#dec24">24. Galinha Pintadinha</a></li>
-                    <li><a href="#dec25">25. Bolofofos</a></li>
-                    <li><a href="#dec26">26. Lilo e Stitch</a></li>
-                    <li><a href="#dec27">27. Pool Party</a></li>
-                    <li><a href="#dec28">28. Tardezinha</a></li>
+                    <li><a href="index.html#dec1">Jardim Encantado</a></li>
+                    <li><a href="index.html#dec2">Frozen</a></li>
+                    <li><a href="index.html#dec3">Bobbie Goods</a></li>
+                    <li><a href="index.html#dec4">Dinossauro</a></li>
+                    <li><a href="index.html#dec5">Minecraft</a></li>
+                    <li><a href="index.html#dec6">Casa da Gabby</a></li>
+                    <li><a href="index.html#dec7">Astronauta</a></li>
+                    <li><a href="index.html#dec8">Roblox</a></li>
+                    <li><a href="index.html#dec9">Arraial</a></li>
+                    <li><a href="index.html#dec10">Hot Wheels</a></li>
+                    <li><a href="index.html#dec11">Stitch</a></li>
+                    <li><a href="index.html#dec12">Minnie</a></li>
+                    <li><a href="index.html#dec13">Safári</a></li>
+                    <li><a href="index.html#dec14">Chá Revelação (Mod. 2)</a></li>
+                    <li><a href="index.html#dec15">Chá Revelação (Mod. 1)</a></li>
+                    <li><a href="index.html#dec16">Boteco</a></li>
+                    <li><a href="index.html#dec17">Homem-Aranha</a></li>
+                    <li><a href="index.html#dec18">Patrulha Canina</a></li>
+                    <li><a href="index.html#dec19">Neon</a></li>
+                    <li><a href="index.html#dec20">Gamer</a></li>
+                    <li><a href="index.html#dec21">Super Mario</a></li>
+                    <li><a href="index.html#dec22">Sonic</a></li>
+                    <li><a href="index.html#dec23">Futebol</a></li>
+                    <li><a href="index.html#dec24">Galinha Pintadinha</a></li>
+                    <li><a href="index.html#dec25">Bolofofos</a></li>
+                    <li><a href="index.html#dec26">Lilo e Stitch</a></li>
+                    <li><a href="index.html#dec27">Pool Party</a></li>
+                    <li><a href="index.html#dec28">Tardezinha</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main-content">
-        <div class="decorations-grid">
+        <div class="decorations-grid" id="catalogo">
 
             <div class="decoracao-card" id="dec1">
-                <h3 class="decoracao-title">1. Jardim Encantado</h3>
+                <h3 class="decoracao-title">Jardim Encantado</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -64,7 +78,7 @@
             </div>
 
             <div class="decoracao-card" id="dec2">
-                <h3 class="decoracao-title">2. Frozen</h3>
+                <h3 class="decoracao-title">Frozen</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -77,7 +91,7 @@
             </div>
 
             <div class="decoracao-card" id="dec3">
-                <h3 class="decoracao-title">3. Bobbie Goods</h3>
+                <h3 class="decoracao-title">Bobbie Goods</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -90,20 +104,20 @@
             </div>
 
             <div class="decoracao-card" id="dec4">
-                <h3 class="decoracao-title">4. Dinossauro</h3>
+                <h3 class="decoracao-title">Dinossauro</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
                     <div class="carousel-track">
                         <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/dinoB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Dinossauro - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
                         <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/dinoS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Dinossauro - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/dinoP"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Dinossauro - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
+                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/dinoP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Dinossauro - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
                     </div>
                 </div>
             </div>
 
-            <div class="decoracao-card" id="dec5">
-                <h3 class="decoracao-title">5. Minecraft</h3>
+            <div class="decoracao-card rank-1" id="dec5">
+                <h3 class="decoracao-title">Minecraft</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -116,7 +130,7 @@
             </div>
 
             <div class="decoracao-card" id="dec6">
-                <h3 class="decoracao-title">6. Casa da Gabby</h3>
+                <h3 class="decoracao-title">Casa da Gabby</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -129,7 +143,7 @@
             </div>
 
             <div class="decoracao-card" id="dec7">
-                <h3 class="decoracao-title">7. Astronauta</h3>
+                <h3 class="decoracao-title">Astronauta</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -141,8 +155,8 @@
                 </div>
             </div>
 
-            <div class="decoracao-card" id="dec8">
-                <h3 class="decoracao-title">8. Roblox</h3>
+            <div class="decoracao-card rank-1" id="dec8">
+                <h3 class="decoracao-title">Roblox</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -155,7 +169,7 @@
             </div>
 
             <div class="decoracao-card" id="dec9">
-                <h3 class="decoracao-title">9. Arraial</h3>
+                <h3 class="decoracao-title">Arraial</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -167,8 +181,8 @@
                 </div>
             </div>
 
-            <div class="decoracao-card" id="dec10">
-                <h3 class="decoracao-title">10. Hot Wheels</h3>
+            <div class="decoracao-card rank-1" id="dec10">
+                <h3 class="decoracao-title">Hot Wheels</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -180,8 +194,8 @@
                 </div>
             </div>
 
-            <div class="decoracao-card" id="dec11">
-                <h3 class="decoracao-title">11. Stitch</h3>
+            <div class="decoracao-card rank-1" id="dec11">
+                <h3 class="decoracao-title">Stitch</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -194,7 +208,7 @@
             </div>
 
             <div class="decoracao-card" id="dec12">
-                <h3 class="decoracao-title">12. Minnie</h3>
+                <h3 class="decoracao-title">Minnie</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -207,7 +221,7 @@
             </div>
 
             <div class="decoracao-card" id="dec13">
-                <h3 class="decoracao-title">13. Safári</h3>
+                <h3 class="decoracao-title">Safári</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -220,7 +234,7 @@
             </div>
 
             <div class="decoracao-card" id="dec14">
-                <h3 class="decoracao-title">14. Chá Revelação (Mod. 2)</h3>
+                <h3 class="decoracao-title">Chá Revelação (Mod. 2)</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -233,7 +247,7 @@
             </div>
 
             <div class="decoracao-card" id="dec15">
-                <h3 class="decoracao-title">15. Chá Revelação (Mod. 1)</h3>
+                <h3 class="decoracao-title">Chá Revelação (Mod. 1)</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -246,7 +260,7 @@
             </div>
 
             <div class="decoracao-card" id="dec16">
-                <h3 class="decoracao-title">16. Boteco</h3>
+                <h3 class="decoracao-title">Boteco</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -259,7 +273,7 @@
             </div>
 
             <div class="decoracao-card" id="dec17">
-                <h3 class="decoracao-title">17. Homem-Aranha</h3>
+                <h3 class="decoracao-title">Homem-Aranha</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -272,7 +286,7 @@
             </div>
 
             <div class="decoracao-card" id="dec18">
-                <h3 class="decoracao-title">18. Patrulha Canina</h3>
+                <h3 class="decoracao-title">Patrulha Canina</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -285,7 +299,7 @@
             </div>
 
             <div class="decoracao-card" id="dec19">
-                <h3 class="decoracao-title">19. Neon</h3>
+                <h3 class="decoracao-title">Neon</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -298,7 +312,7 @@
             </div>
 
             <div class="decoracao-card" id="dec20">
-                <h3 class="decoracao-title">20. Gamer</h3>
+                <h3 class="decoracao-title">Gamer</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -311,7 +325,7 @@
             </div>
 
             <div class="decoracao-card" id="dec21">
-                <h3 class="decoracao-title">21. Super Mario</h3>
+                <h3 class="decoracao-title">Super Mario</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -324,7 +338,7 @@
             </div>
 
             <div class="decoracao-card" id="dec22">
-                <h3 class="decoracao-title">22. Sonic</h3>
+                <h3 class="decoracao-title">Sonic</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -337,7 +351,7 @@
             </div>
 
             <div class="decoracao-card" id="dec23">
-                <h3 class="decoracao-title">23. Futebol</h3>
+                <h3 class="decoracao-title">Futebol</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -350,7 +364,7 @@
             </div>
 
             <div class="decoracao-card" id="dec24">
-                <h3 class="decoracao-title">24. Galinha Pintadinha</h3>
+                <h3 class="decoracao-title">Galinha Pintadinha</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -363,7 +377,7 @@
             </div>
 
             <div class="decoracao-card" id="dec25">
-                <h3 class="decoracao-title">25. Bolofofos</h3>
+                <h3 class="decoracao-title">Bolofofos</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -376,7 +390,7 @@
             </div>
 
             <div class="decoracao-card" id="dec26">
-                <h3 class="decoracao-title">26. Lilo e Stitch</h3>
+                <h3 class="decoracao-title">Lilo e Stitch</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -389,7 +403,7 @@
             </div>
 
             <div class="decoracao-card" id="dec27">
-                <h3 class="decoracao-title">27. Pool Party</h3>
+                <h3 class="decoracao-title">Pool Party</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -402,7 +416,7 @@
             </div>
 
             <div class="decoracao-card" id="dec28">
-                <h3 class="decoracao-title">28. Tardezinha</h3>
+                <h3 class="decoracao-title">Tardezinha</h3>
                 <div class="carousel-container">
                     <button class="carousel-btn btn-prev">❮</button>
                     <button class="carousel-btn btn-next">❯</button>
@@ -423,14 +437,14 @@
         <img class="modal-content" id="expandedImg">
     </div>
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer" id="contato">
             <div class="footer-container">
                 
                 <div class="footer-content">
                     <div class="footer-secao sobre">
                         <h2 class="footer-logo">Sua Festa Inesquecível</h2>
-                        <p>Transformando sonhos em decorações espetaculares desde 2010. Cuidamos de cada detalhe para você apenas comemorar.</p>
-                    </div>
+                        <p>Kits lindos, práticos e completos no sistema Pegue e Monte. A solução perfeita e econômica para a sua festa!</p>
+                </div>
                     
                     <div class="footer-secao contatos">
                         <h3>Fale Diretamente</h3>

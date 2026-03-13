@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Festa - Quem Somos e Como Funciona</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-area">
+            <h1>
+                <a href="index.html" style="text-decoration: none; color: var(--cor-roxo-medio);">
+                    Sua Festa Inesquecível
+                </a>
+            </h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-menu-lista">
+                <li><a href="index.html">Decorações</a></li>
+                <li><a href="about.html">Como Funciona</a></li>
+                <li><a href="contact.html">Onde Estamos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-container">
+            <button class="menu-toggler-btn" id="menuToggler">Categorias ▼</button>
+            <nav class="menu-dropdown-content" id="menuDropdown">
+                <ul class="menu-lista">
+                    <li><a href="index.html#dec1">Voltar para Decorações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content" style="padding-top: 40px;">
+        <section class="sobre-funciona-section">
+            <div class="sobre-container">
+                
+                <div class="quem-somos-box">
+                    <h2>Quem Somos 💖</h2>
+                    <p>Somos apaixonados por realizar sonhos de forma prática e acessível! Nossa missão é oferecer kits lindos e completos para transformar o seu evento em um momento mágico.</p>
+                    <p>Trabalhamos com o sistema <strong>Pegue e Monte</strong>: preparamos as peças com todo o carinho para que você mesmo(a) possa retirar, montar o cenário perfeito com facilidade e criar memórias inesquecíveis.</p>
+                </div>
+
+                <div class="como-funciona-box">
+                    <h2>Como Funciona? ✨</h2>
+                    <div class="passos-container">
+                        <div class="passo">
+                            <div class="passo-numero">1</div>
+                            <div class="passo-texto">
+                                <strong>Escolha o Tema</strong>
+                                <span>Navegue pelo nosso catálogo e encontre a decoração perfeita para sua festa.</span>
+                            </div>
+                        </div>
+                        <div class="passo">
+                            <div class="passo-numero">2</div>
+                            <div class="passo-texto">
+                                <strong>Reserve a Data</strong>
+                                <span>Clique no botão do WhatsApp, consulte a disponibilidade e agende a retirada.</span>
+                            </div>
+                        </div>
+                        <div class="passo">
+                            <div class="passo-numero">3</div>
+                            <div class="passo-texto">
+                                <strong>Pegue, Monte e Devolva!</strong>
+                                <span>Você retira o kit conosco, monta facilmente no seu espaço e nos devolve após o evento. Prático e econômico!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-secao sobre">
+                    <h2 class="footer-logo">Sua Festa Inesquecível</h2>
+                    <p>Kits lindos, práticos e completos no sistema Pegue e Monte. A solução perfeita e econômica para a sua festa!</p>
+                </div>
+                <div class="footer-secao contatos">
+                    <h3>Fale Diretamente</h3>
+                    <p><span>📱</span> WhatsApp: (19) 99920-8659</p>
+                    <p><span>📧</span> decorafest.25@gmail.com</p>
+                    <p><span>📍</span> Atendemos Estiva Gerbi e Região</p>
+                </div>
+                <div class="footer-secao redes-sociais">
+                    <h3>Siga Nosso Brilho</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_.decorafest/?hl=pt-br" target="_blank" class="icon-instagram" title="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                        </a>
+                        <a href="https://wa.me/5519999208659?text=Olá!%20Gostaria%20de%20tirar%20umas%20dúvidas." target="_blank" class="icon-whatsapp" title="WhatsApp">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sua Festa Inesquecível. Todos os direitos reservados.</p>
+                <p class="desenvolvido">Desenvolvido com carinho 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5519999208659?text=Olá!%20Gostaria%20de%20falar%20com%20um%20atendente." class="floating-btn" target="_blank">
+        <span>💬</span> Falar com atendente
+    </a>
+
+    <script>
+        const togglerBtn = document.getElementById('menuToggler');
+        const menuDropdown = document.getElementById('menuDropdown');
+        togglerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menuDropdown.classList.toggle('show');
+        });
+        document.addEventListener('click', (e) => {
+            if (!togglerBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
+                menuDropdown.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

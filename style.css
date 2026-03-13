@@ -1,386 +1,447 @@
-        /* --- Paleta de Cores e Variáveis --- */
-        :root {
-            --cor-rosa-fundo: #F2B9B3;
-            --cor-rosa-claro: #F2A0CD;
-            --cor-lilas-claro: #BB94F2;
-            --cor-roxo-medio: #B189D9;
-            --cor-fundo-offwhite: #F2F2F2;
-            --cor-texto-escuro: #4a3b4a;
-            --cor-branco: #ffffff;
-            --cor-whatsapp: #25D366;
-            --sombra-suave: 0 10px 30px rgba(177, 137, 217, 0.2);
-            --sombra-card: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
+/* --- Paleta de Cores e Variáveis --- */
+:root {
+    --cor-rosa-fundo: #F2B9B3;
+    --cor-rosa-claro: #F2A0CD;
+    --cor-lilas-claro: #BB94F2;
+    --cor-roxo-medio: #B189D9;
+    --cor-fundo-offwhite: #F2F2F2;
+    --cor-texto-escuro: #4a3b4a;
+    --cor-branco: #ffffff;
+    --cor-whatsapp: #25D366;
+    --sombra-suave: 0 10px 30px rgba(177, 137, 217, 0.2);
+    --sombra-card: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--cor-fundo-offwhite);
-            color: var(--cor-texto-escuro);
-            line-height: 1.6;
-            padding-top: 80px; 
-            overflow-x: hidden;
-        }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--cor-fundo-offwhite);
+    color: var(--cor-texto-escuro);
+    line-height: 1.6;
+    padding-top: 80px; 
+    overflow-x: hidden;
+}
 
-        /* --- Navbar --- */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: var(--cor-branco);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-        }
-        .navbar h1 { font-size: 1.5rem; color: var(--cor-roxo-medio); }
-        .menu-container { position: relative; }
-        .menu-toggler-btn {
-            background-color: var(--cor-roxo-medio);
-            color: var(--cor-branco);
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .menu-toggler-btn:hover { background-color: var(--cor-lilas-claro); }
-        .menu-dropdown-content {
-            position: absolute;
-            top: 120%;
-            right: 0;
-            background-color: var(--cor-branco);
-            min-width: 280px;
-            box-shadow: var(--sombra-suave);
-            border-radius: 8px;
-            border: 1px solid var(--cor-rosa-claro);
-            display: none; 
-            max-height: 70vh;
-            overflow-y: auto;
-            z-index: 1001;
-        }
-        .menu-dropdown-content.show { display: block; }
-        .menu-lista { list-style: none; padding: 10px; }
-        .menu-lista a {
-            text-decoration: none;
-            color: var(--cor-texto-escuro);
-            display: block;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.2s;
-            font-size: 0.95rem;
-        }
-        .menu-lista a:hover {
-            background-color: var(--cor-rosa-fundo);
-            color: var(--cor-roxo-medio);
-        }
-
-        /* --- Grid Principal --- */
-        .main-content {
-            padding: 2rem;
-            max-width: 1400px; 
-            margin: 0 auto;
-        }
-        .decorations-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 NO DESKTOP */
-            gap: 20px; 
-        }
-
-        /* --- Card da Decoração --- */
-        .decoracao-card {
-            background-color: var(--cor-branco);
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: var(--sombra-card);
-            scroll-margin-top: 100px; 
-            border: 1px solid rgba(177, 137, 217, 0.2);
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        .decoracao-title {
-            font-size: 1.1rem;
-            color: var(--cor-roxo-medio);
-            text-align: center;
-            padding: 15px 10px;
-            background-color: rgba(242, 185, 179, 0.1);
-            border-bottom: 2px solid var(--cor-rosa-claro);
-            margin: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-        }
-
-        /* --- CARROSSEL --- */
-        .carousel-container {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            flex-grow: 1;
-        }
-        .carousel-track {
-            display: flex;
-            transition: transform 0.4s ease-in-out;
-            height: 100%;
-            width: 100%;
-        }
-        .carousel-slide {
-            min-width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .img-wrapper {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 3 / 4; /* MANTÉM A PROPORÇÃO RESPONSIVA */
-        }
-        .img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .style-label {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 4px 12px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            color: white;
-            text-transform: uppercase;
-            border-radius: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .label-basico { background-color: var(--cor-rosa-claro); }
-        .label-standard { background-color: var(--cor-lilas-claro); } 
-        .label-premium { background-color: var(--cor-roxo-medio); }
-
-        .carousel-btn {
-            position: absolute;
-            top: 40%;
-            transform: translateY(-50%);
-            background-color: rgba(255, 255, 255, 0.8);
-            color: var(--cor-roxo-medio);
-            border: none;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            font-size: 1rem;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            transition: all 0.2s;
-            z-index: 10;
-        }
-        .carousel-btn:hover { background-color: var(--cor-branco); transform: translateY(-50%) scale(1.1); }
-        .btn-prev { left: 5px; }
-        .btn-next { right: 5px; }
-
-        /* Área de Preço e Botão */
-        .info-container {
-            padding: 15px;
-            text-align: center;
-            background-color: var(--cor-branco);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-top: 1px solid var(--cor-fundo-offwhite);
-        }
-        .price-tag {
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: var(--cor-roxo-medio); 
-        }
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background-color: var(--cor-whatsapp);
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px; 
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background-color 0.3s, transform 0.2s;
-            white-space: nowrap; 
-            width: 100%;
-        }
-        .whatsapp-btn:hover { background-color: #1da851; transform: translateY(-2px); }
-
-        /* --- Responsividade --- */
-        @media (max-width: 1024px) {
-            .decorations-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .navbar { padding: 15px; flex-direction: column; gap: 10px; }
-            body { padding-top: 110px; }
-            .main-content { padding: 1rem; }
-            .decorations-grid { grid-template-columns: 1fr; gap: 30px; /* 1 NO MOBILE */ }
-            .decoracao-title { font-size: 1.3rem; }
-            .whatsapp-btn { padding: 12px 20px; font-size: 1rem; }
-        }
-        /* --- Botão Flutuante do WhatsApp --- */
-        .floating-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--cor-whatsapp);
-            color: var(--cor-branco);
-            text-decoration: none;
-            padding: 15px 25px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-            z-index: 2000;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .floating-btn:hover {
-            background-color: #1da851;
-            transform: scale(1.05) translateY(-5px);
-        }
-
-        /* Deixa o botão um pouco menor no celular */
-        @media (max-width: 768px) {
-            .floating-btn {
-                bottom: 20px;
-                right: 20px;
-                padding: 12px 20px;
-                font-size: 0.95rem;
-            }
-        }
-        /* ==========================================
-   ESTILOS DO MODAL DE IMAGENS (LIGHTBOX)
-   ========================================== */
-    .modal {
-        display: none; /* Escondido por padrão, o JavaScript que vai mostrar */
-        position: fixed;
-        z-index: 9999; /* Fica por cima de todo o resto do site */
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.85); /* Fundo escuro semi-transparente */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-    }
-
-    .modal-content {
-        max-width: 90%;
-        max-height: 90vh; /* Ocupa no máximo 90% da altura da tela */
-        object-fit: contain; /* Não deixa a imagem esticar ou distorcer */
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        animation: zoomIn 0.3s ease; /* Efeito de entrada */
-    }
-
-    /* Animação de entrada da imagem */
-    @keyframes zoomIn {
-        from {transform: scale(0.8); opacity: 0;}
-        to {transform: scale(1); opacity: 1;}
-    }
-
-    /* Botão de Fechar (X) */
-    .close-modal {
-        position: absolute;
-        top: 20px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 45px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-
-    .close-modal:hover {
-        color: #ff4d4d;
-    }
-
-    /* Deixa o cursor com formato de "lupa" quando passar o mouse nas fotos pequenas */
-    .img-wrapper img {
-        cursor: zoom-in;
-    }
-    /* ==========================================
-   NOVO ESTILO DO RODAPÉ (FOOTER PREMIUM)
-   ========================================== */
-.site-footer {
-    /* 1. Cores e Fundo degradê moderno */
-    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); /* Roxo vibrante moderno */
-    color: #ffffff;
-    
-    /* 2. Separação do Site (margin-top bem grande) */
-    margin-top: 120px; 
-    
-    /* 3. Centralização e Layout */
+/* --- Navbar Atualizada --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 60px 0 20px 0; /* Padding superior grande */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    /* 4. Sombra para destacar do site */
-    box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
-    
-    /* Garante centralização total interna */
+    background-color: var(--cor-branco);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap; /* Importante para o celular */
+}
+.logo-area h1 { 
+    font-size: 1.5rem; 
+    color: var(--cor-roxo-medio); 
+    margin: 0;
+}
+
+/* Novo menu principal centralizado */
+.main-nav .main-menu-lista {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav .main-menu-lista a {
+    text-decoration: none;
+    color: var(--cor-texto-escuro);
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+.main-nav .main-menu-lista a:hover {
+    color: var(--cor-roxo-medio);
+}
+
+/* Menu de Categorias (Dropdown) */
+.menu-container { position: relative; }
+.menu-toggler-btn {
+    background-color: var(--cor-roxo-medio);
+    color: var(--cor-branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.menu-toggler-btn:hover { background-color: var(--cor-lilas-claro); }
+.menu-dropdown-content {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: var(--cor-branco);
+    min-width: 280px;
+    box-shadow: var(--sombra-suave);
+    border-radius: 8px;
+    border: 1px solid var(--cor-rosa-claro);
+    display: none; 
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 1001;
+}
+.menu-dropdown-content.show { display: block; }
+.menu-lista { list-style: none; padding: 10px; }
+.menu-lista a {
+    text-decoration: none;
+    color: var(--cor-texto-escuro);
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    font-size: 0.95rem;
+}
+.menu-lista a:hover {
+    background-color: var(--cor-rosa-fundo);
+    color: var(--cor-roxo-medio);
+}
+
+/* ==========================================
+   SEÇÃO QUEM SOMOS + COMO FUNCIONA
+   ========================================== */
+.sobre-funciona-section {
+    background-color: var(--cor-branco);
+    padding: 40px;
+    margin: 2rem auto;
+    max-width: 1400px;
+    width: calc(100% - 4rem);
+    border-radius: 20px;
+    box-shadow: var(--sombra-card);
+    border: 1px solid rgba(177, 137, 217, 0.2);
+}
+
+.sobre-container {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.quem-somos-box, .como-funciona-box {
+    flex: 1;
+}
+
+.sobre-funciona-section h2 {
+    color: var(--cor-roxo-medio);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--cor-rosa-claro);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.quem-somos-box p {
+    color: var(--cor-texto-escuro);
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Lista de Passos */
+.passos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.passo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--cor-fundo-offwhite);
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid var(--cor-roxo-medio);
+    transition: transform 0.2s;
+}
+
+.passo:hover {
+    transform: translateX(10px);
+}
+
+.passo-numero {
+    background-color: var(--cor-roxo-medio);
+    color: var(--cor-branco);
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-container {
-    max-width: 1200px;
-    width: 90%; /* Ocupa 90% da tela em dispositivos menores */
-    margin: 0 auto;
-    text-align: center; /* Centraliza todo o texto por padrão */
+.passo-texto strong {
+    display: block;
+    color: var(--cor-texto-escuro);
+    font-size: 1.1rem;
+    margin-bottom: 3px;
 }
 
+.passo-texto span {
+    font-size: 0.9rem;
+}
+
+/* --- Grid Principal (Catálogo) --- */
+.main-content {
+    padding: 0 2rem 2rem 2rem;
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+.decorations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+/* --- Card da Decoração --- */
+.decoracao-card {
+    background-color: var(--cor-branco);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--sombra-card);
+    scroll-margin-top: 100px; 
+    border: 1px solid rgba(177, 137, 217, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.decoracao-title {
+    font-size: 1.1rem;
+    color: var(--cor-roxo-medio);
+    text-align: center;
+    padding: 15px 10px;
+    background-color: rgba(242, 185, 179, 0.1);
+    border-bottom: 2px solid var(--cor-rosa-claro);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+/* --- CARROSSEL --- */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4; 
+}
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in; /* Cursor Lightbox */
+}
+
+.style-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.label-basico { background-color: var(--cor-rosa-claro); }
+.label-standard { background-color: var(--cor-lilas-claro); } 
+.label-premium { background-color: var(--cor-roxo-medio); }
+
+.carousel-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--cor-roxo-medio);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.2s;
+    z-index: 10;
+}
+.carousel-btn:hover { background-color: var(--cor-branco); transform: translateY(-50%) scale(1.1); }
+.btn-prev { left: 5px; }
+.btn-next { right: 5px; }
+
+/* Área de Preço e Botão */
+.info-container {
+    padding: 15px;
+    text-align: center;
+    background-color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--cor-fundo-offwhite);
+}
+.price-tag {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--cor-roxo-medio); 
+}
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--cor-whatsapp);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; 
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap; 
+    width: 100%;
+}
+.whatsapp-btn:hover { background-color: #1da851; transform: translateY(-2px); }
+
+/* --- Botão Flutuante do WhatsApp --- */
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--cor-whatsapp);
+    color: var(--cor-branco);
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    z-index: 2000;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.floating-btn:hover {
+    background-color: #1da851;
+    transform: scale(1.05) translateY(-5px);
+}
+
+/* ==========================================
+   MODAL DE IMAGENS (LIGHTBOX)
+   ========================================== */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    justify-content: center; 
+    align-items: center; 
+}
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh; 
+    object-fit: contain; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease; 
+}
+@keyframes zoomIn {
+    from {transform: scale(0.8); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.close-modal:hover { color: var(--cor-rosa-claro); }
+
+/* ==========================================
+   RODAPÉ (FOOTER PREMIUM) - Usando suas cores!
+   ========================================== */
+.site-footer {
+    background: linear-gradient(135deg, var(--cor-roxo-medio) 0%, var(--cor-lilas-claro) 100%); 
+    color: var(--cor-branco);
+    margin-top: 80px; 
+    width: 100%;
+    padding: 60px 0 20px 0; 
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container {
+    max-width: 1200px;
+    width: 90%; 
+    margin: 0 auto;
+    text-align: center; 
+}
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza as colunas */
-    gap: 40px; /* Espaço entre as colunas */
+    justify-content: center; 
+    gap: 40px; 
     margin-bottom: 50px;
 }
-
 .footer-secao {
     flex: 1;
-    min-width: 280px; /* Impede que fiquem muito espremidas */
+    min-width: 280px; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo da coluna */
+    align-items: center; 
 }
-
-/* Estilo do Título Principal/Logo */
 .footer-logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #ffeaa7; /* Amarelo clarinho de destaque */
+    color: var(--cor-branco); 
     margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
-
 .footer-secao h3 {
-    color: #ffeaa7; /* Amarelo clarinho para os títulos secundários */
+    color: var(--cor-branco); 
     margin-bottom: 20px;
     font-size: 1.3rem;
     position: relative;
     padding-bottom: 10px;
 }
-
-/* Linha decorativa embaixo do título (centralizada) */
 .footer-secao h3::after {
     content: '';
     position: absolute;
@@ -389,35 +450,28 @@
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background-color: #ffeaa7;
+    background-color: var(--cor-rosa-claro);
     border-radius: 2px;
 }
-
 .footer-secao p {
-    color: #f1f1f1;
+    color: var(--cor-branco);
     margin-bottom: 12px;
     line-height: 1.6;
     font-size: 1rem;
-    max-width: 350px; /* Limita a largura do texto para centralizar melhor */
+    max-width: 350px; 
 }
+.footer-secao span { margin-right: 8px; font-size: 1.1rem; }
 
-.footer-secao span {
-    margin-right: 8px;
-    font-size: 1.1rem;
-}
-
-/* Estilo dos Ícones de Redes Sociais (Vibrantes) */
 .social-icons {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 10px;
 }
-
 .social-icons a {
-    background-color: rgba(255,255,255,0.2); /* Fundo sutil */
+    background-color: rgba(255,255,255,0.2); 
     padding: 12px;
-    border-radius: 50%; /* Faz o ícone circular */
+    border-radius: 50%; 
     transition: all 0.3s ease;
     display: flex;
     justify-content: center;
@@ -425,53 +479,79 @@
     width: 50px;
     height: 50px;
 }
-
 .social-icons a img {
     width: 24px;
     height: 24px;
-    /* Faz os ícones ficarem brancos por padrão */
     filter: brightness(0) invert(1); 
 }
-
-/* Efeito de Hover nas Redes Sociais */
 .social-icons a:hover {
-    background-color: #ffeaa7; /* Amarelo ao passar o mouse */
-    transform: translateY(-5px) scale(1.1); /* Sobe um pouquinho */
+    background-color: var(--cor-rosa-claro); 
+    transform: translateY(-5px) scale(1.1); 
 }
+.social-icons a:hover img { filter: none; }
 
-.social-icons a:hover img {
-    /* Volta a cor original do ícone no hover */
-    filter: none; 
-}
-
-/* Faixa Inferior Centralizada */
 .footer-bottom {
     text-align: center;
     padding-top: 25px;
-    border-top: 1px solid rgba(255,255,255,0.15); /* Linha divisória sutil */
+    border-top: 1px solid rgba(255,255,255,0.2); 
     font-size: 0.9rem;
-    color: #dfe6e9;
+    color: var(--cor-fundo-offwhite);
 }
-
 .desenvolvido {
     margin-top: 8px;
     font-size: 0.8rem;
-    color: #b2bec3;
+    color: var(--cor-branco);
+    opacity: 0.8;
 }
 
-/* Responsividade (Celular) */
-@media (max-width: 768px) {
-    .site-footer {
-        padding: 40px 0 20px 0;
-        margin-top: 80px; /* Margin um pouco menor no celular */
-    }
-    
-    .footer-content {
-        flex-direction: column; /* Colunas viram linhas */
-        gap: 30px;
-    }
-    
-    .footer-logo {
-        font-size: 1.6rem;
-    }
+/* --- Responsividade Geral --- */
+@media (max-width: 1024px) {
+    .decorations-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+@media (max-width: 768px) {
+    /* Ajustes do Topo e Menu */
+    .navbar { padding: 15px; flex-direction: column; gap: 15px; }
+    .main-nav .main-menu-lista { gap: 15px; flex-wrap: wrap; justify-content: center; }
+    
+    body { padding-top: 140px; } /* Mais espaço para o menu quebrado em linhas */
+    .main-content { padding: 1rem; }
+    
+    /* Ajustes Sobre/Como Funciona */
+    .sobre-funciona-section {
+        width: calc(100% - 2rem);
+        margin: 1rem auto;
+        padding: 20px;
+    }
+    .sobre-container { flex-direction: column; gap: 30px; }
+    
+    /* Ajustes do Grid */
+    .decorations-grid { grid-template-columns: 1fr; gap: 30px; }
+    .decoracao-title { font-size: 1.3rem; }
+    
+    /* Ajustes Botões */
+    .whatsapp-btn { padding: 12px 20px; font-size: 1rem; }
+    .floating-btn { bottom: 20px; right: 20px; padding: 12px 20px; font-size: 0.95rem; }
+    
+    /* Ajustes Rodapé */
+    .site-footer { padding: 40px 0 20px 0; margin-top: 60px; }
+    .footer-content { flex-direction: column; gap: 30px; }
+    .footer-logo { font-size: 1.6rem; }
+}
+/* ==========================================
+   SISTEMA DE RANKING (PRIORIDADE)
+   ========================================== */
+/* O padrão de todos os cartões é order: 0. 
+   Números negativos forçam o cartão a ir para o topo. */
+   
+.rank-1 { 
+    order: -3 !important; 
+} /* O mais importante, aparece em 1º */
+
+.rank-2 { 
+    order: -2 !important; 
+} /* Aparece logo abaixo do rank-1 */
+
+.rank-3 { 
+    order: -1 !important; 
+} /* Aparece logo abaixo do rank-2 */

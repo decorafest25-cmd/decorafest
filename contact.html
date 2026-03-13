@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Festa - Onde Estamos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-area">
+            <h1>
+                <a href="index.html" style="text-decoration: none; color: var(--cor-roxo-medio);">
+                    Sua Festa Inesquecível
+                </a>
+            </h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-menu-lista">
+                <li><a href="index.html">Decorações</a></li>
+                <li><a href="about.html">Como Funciona</a></li>
+                <li><a href="contact.html">Onde Estamos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-container">
+            <button class="menu-toggler-btn" id="menuToggler">Categorias ▼</button>
+            <nav class="menu-dropdown-content" id="menuDropdown">
+                <ul class="menu-lista">
+                    <li><a href="index.html#dec1">Voltar para Decorações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content" style="padding-top: 40px;">
+        <section class="sobre-funciona-section">
+            <h2 style="text-align: center; display: block; border-bottom: none;">Onde Estamos 📍</h2>
+            
+            <div class="sobre-container" style="margin-top: 30px;">
+                <div class="quem-somos-box">
+                    <h3 style="color: var(--cor-roxo-medio); margin-bottom: 15px;">Nosso Endereço</h3>
+                    <p><strong>Local de Retirada:</strong> Rua Alcides André da Silva, 251</p>
+                    <p><strong>Região:</strong> Estamos em Estiva Gerbi, SP. Clientes de toda a região são bem-vindos para retirar seus kits!</p>
+                    <p><strong>Formato:</strong> Trabalhamos exclusivamente com o sistema <strong>Pegue e Monte</strong>. Você agenda conosco, retira as peças prontas no nosso endereço, monta sua festa e faz a devolução após o evento.</p>
+                    <br>
+                    <h3 style="color: var(--cor-roxo-medio); margin-bottom: 15px;">Contatos Diretos</h3>
+                    <p>📞 <strong>WhatsApp:</strong> (19) 99920-8659</p>
+                    <p>📧 <strong>E-mail:</strong> decorafest.25@gmail.com</p>
+                    <p>📸 <strong>Instagram:</strong> @_.decorafest</p>
+                </div>
+
+                <div class="como-funciona-box" style="padding: 0; overflow: hidden; border-radius: 20px; display: flex; flex-direction: column;">
+                    <div style="background-color: var(--cor-roxo-medio); color: white; padding: 15px; text-align: center;">
+                        <h3 style="margin: 0; font-size: 1.2rem;">Venha retirar sua festa! 🎈</h3>
+                    </div>
+                    <iframe 
+                        src="https://www.google.com/maps?q=Rua+Alcides+André+da+Silva,+251,+Estiva+Gerbi+-+SP&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 350px; flex-grow: 1;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-secao sobre">
+                    <h2 class="footer-logo">Sua Festa Inesquecível</h2>
+                    <p>Kits lindos, práticos e completos no sistema Pegue e Monte. A solução perfeita e econômica para a sua festa!</p>
+                </div>
+                <div class="footer-secao contatos">
+                    <h3>Fale Diretamente</h3>
+                    <p><span>📱</span> WhatsApp: (19) 99920-8659</p>
+                    <p><span>📧</span> decorafest.25@gmail.com</p>
+                    <p><span>📍</span> Atendemos Estiva Gerbi e Região</p>
+                </div>
+                <div class="footer-secao redes-sociais">
+                    <h3>Siga Nosso Brilho</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_.decorafest/?hl=pt-br" target="_blank" class="icon-instagram" title="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                        </a>
+                        <a href="https://wa.me/5519999208659?text=Olá!%20Gostaria%20de%20tirar%20umas%20dúvidas." target="_blank" class="icon-whatsapp" title="WhatsApp">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sua Festa Inesquecível. Todos os direitos reservados.</p>
+                <p class="desenvolvido">Desenvolvido com carinho 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5519999208659?text=Olá!%20Gostaria%20de%20falar%20com%20um%20atendente." class="floating-btn" target="_blank">
+        <span>💬</span> Falar com atendente
+    </a>
+
+    <script>
+        const togglerBtn = document.getElementById('menuToggler');
+        const menuDropdown = document.getElementById('menuDropdown');
+        togglerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menuDropdown.classList.toggle('show');
+        });
+        document.addEventListener('click', (e) => {
+            if (!togglerBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
+                menuDropdown.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
