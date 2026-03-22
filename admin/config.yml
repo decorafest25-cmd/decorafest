@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-  branch: main # ATENÇÃO: Se o seu repositório no GitHub usar 'master' em vez de 'main', altere esta palavra.
+  branch: main
 
-media_folder: "imagem" # Pasta onde o painel vai salvar as fotos que o funcionário subir
+media_folder: "imagem"
 public_folder: "imagem"
 
 collections:
@@ -20,10 +20,14 @@ collections:
             widget: "list"
             fields:
               - {label: "Nome do Tema", name: "titulo", widget: "string"}
-              - {label: "Prioridade (Ex: 1 para topo. Deixe em branco p/ normal)", name: "rank", widget: "number", required: false}
-              - {label: "Preço Básico (R$)", name: "precoB", widget: "string"}
+              - label: "Prioridade na Vitrine"
+                name: "rank"
+                widget: "select"
+                options:
+                  - { label: "Alta (Fica no topo)", value: "-10" }
+                  - { label: "Média (Fica no meio)", value: "0" }
+                  - { label: "Baixa (Fica por último)", value: "10" }
+                default: "0"
               - {label: "Foto Básico", name: "imgB", widget: "image"}
-              - {label: "Preço Standard (R$)", name: "precoS", widget: "string"}
               - {label: "Foto Standard", name: "imgS", widget: "image"}
-              - {label: "Preço Premium (R$)", name: "precoP", widget: "string"}
               - {label: "Foto Premium", name: "imgP", widget: "image"}

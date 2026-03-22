@@ -134,25 +134,21 @@
                 const menu = document.getElementById('menuCategoriasDinamico');
 
                 if(itens.length === 0) {
-                    grid.innerHTML = '<h3 style="grid-column: 1/-1; text-align: center; color: var(--cor-roxo-medio); margin-top: 50px;">Ainda não há decorações. Acesse /admin para cadastrar!</h3>';
-                    menu.innerHTML = '<li><a href="#">Sem categorias</a></li>';
+                    grid.innerHTML = '<h3 style="grid-column: 1/-1; text-align: center; color: var(--cor-roxo-medio); margin-top: 50px;">Ainda não há decorações.</h3>';
                     return;
                 }
 
                 let gridHTML = '';
                 let menuHTML = '';
 
-                // Monta o HTML de cada item cadastrado no painel
                 itens.forEach((item, index) => {
                     const idCard = `dec${index + 1}`;
-                    const classeRank = item.rank ? `rank-${item.rank}` : '';
+                    const ordemStyle = `style="order: ${item.rank || 0}"`;
 
-                    // Adiciona no Menu
                     menuHTML += `<li><a href="#${idCard}">${item.titulo}</a></li>`;
 
-                    // Adiciona o Cartão
                     gridHTML += `
-                    <div class="decoracao-card ${classeRank}" id="${idCard}">
+                    <div class="decoracao-card" id="${idCard}" ${ordemStyle}>
                         <h3 class="decoracao-title">${item.titulo}</h3>
                         <div class="carousel-container">
                             <button class="carousel-btn btn-prev">❮</button>
@@ -160,15 +156,15 @@
                             <div class="carousel-track">
                                 <div class="carousel-slide">
                                     <div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="${item.imgB}"></div>
-                                    <div class="info-container"><p class="price-tag">R$ ${item.precoB}</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Básico (R$${item.precoB})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                    <div class="info-container"><p class="price-tag">R$ 99</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Básico (R$99)`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
                                 </div>
                                 <div class="carousel-slide">
                                     <div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="${item.imgS}"></div>
-                                    <div class="info-container"><p class="price-tag">R$ ${item.precoS}</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Standard (R$${item.precoS})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                    <div class="info-container"><p class="price-tag">R$ 129</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Standard (R$129)`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
                                 </div>
                                 <div class="carousel-slide">
                                     <div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="${item.imgP}"></div>
-                                    <div class="info-container"><p class="price-tag">R$ ${item.precoP}</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Premium (R$${item.precoP})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                    <div class="info-container"><p class="price-tag">R$ 149</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Premium (R$149)`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
                                 </div>
                             </div>
                         </div>
@@ -178,16 +174,9 @@
                 grid.innerHTML = gridHTML;
                 menu.innerHTML = menuHTML;
 
-                // Ativa os Carrosséis e o Menu que acabaram de nascer
                 iniciarCarrosseis();
                 iniciarLightbox();
-                
-                const menuLinks = document.querySelectorAll('.menu-lista a');
-                menuLinks.forEach(link => {
-                    link.addEventListener('click', () => menuDropdown.classList.remove('show'));
-                });
-            })
-            .catch(err => console.log('Erro ao ler decorações:', err));
+            });
 
         // ==========================================
         // 4. FUNÇÕES DE FUNCIONAMENTO
