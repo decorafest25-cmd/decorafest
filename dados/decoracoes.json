@@ -42,7 +42,7 @@
     },
     {
       "titulo": "Minecraft",
-      "rank": 1,
+      "rank": "-10",
       "precoB": "99",
       "imgB": "imagem/minecraftB.jpg",
       "precoS": "129",
@@ -72,7 +72,7 @@
     },
     {
       "titulo": "Roblox",
-      "rank": 1,
+      "rank": "-10",
       "precoB": "99",
       "imgB": "imagem/robloxB.jpg",
       "precoS": "129",
@@ -92,7 +92,7 @@
     },
     {
       "titulo": "Hot Wheels",
-      "rank": 1,
+      "rank": "-10",
       "precoB": "99",
       "imgB": "imagem/hotwheelsB.jpg",
       "precoS": "129",
@@ -102,7 +102,7 @@
     },
     {
       "titulo": "Stitch",
-      "rank": 1,
+      "rank": "-10",
       "precoB": "99",
       "imgB": "imagem/stitchDB.jpg",
       "precoS": "129",
