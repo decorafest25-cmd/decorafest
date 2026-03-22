@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Decorações</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-    <!-- Meta Pixel Code (Controle Carina)-->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,13 +19,9 @@
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1974459629775944');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1974459629775944&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
-
-</head>
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1974459629775944&ev=PageView&noscript=1"/></noscript>
+    </head>
 <body>
     <header class="navbar">
         <div class="logo-area">
@@ -38,555 +35,211 @@
         <nav class="main-nav">
             <ul class="main-menu-lista">
                 <li><a href="index.html">Decorações</a></li>
-                <li><a href="about.html">Como Funciona</a></li>
-                <li><a href="contact.html">Onde Estamos</a></li>
+                <li><a href="sobre.html">Como Funciona</a></li>
+                <li><a href="contato.html">Onde Estamos</a></li>
             </ul>
         </nav>
 
         <div class="menu-container">
             <button class="menu-toggler-btn" id="menuToggler">Categorias ▼</button>
             <nav class="menu-dropdown-content" id="menuDropdown">
-                <ul class="menu-lista">
-                    <li><a href="index.html#dec1">Jardim Encantado</a></li>
-                    <li><a href="index.html#dec2">Frozen</a></li>
-                    <li><a href="index.html#dec3">Bobbie Goods</a></li>
-                    <li><a href="index.html#dec4">Dinossauro</a></li>
-                    <li><a href="index.html#dec5">Minecraft</a></li>
-                    <li><a href="index.html#dec6">Casa da Gabby</a></li>
-                    <li><a href="index.html#dec7">Astronauta</a></li>
-                    <li><a href="index.html#dec8">Roblox</a></li>
-                    <li><a href="index.html#dec9">Arraial</a></li>
-                    <li><a href="index.html#dec10">Hot Wheels</a></li>
-                    <li><a href="index.html#dec11">Stitch</a></li>
-                    <li><a href="index.html#dec12">Minnie</a></li>
-                    <li><a href="index.html#dec13">Safári</a></li>
-                    <li><a href="index.html#dec14">Chá Revelação (Mod. 2)</a></li>
-                    <li><a href="index.html#dec15">Chá Revelação (Mod. 1)</a></li>
-                    <li><a href="index.html#dec16">Boteco</a></li>
-                    <li><a href="index.html#dec17">Homem-Aranha</a></li>
-                    <li><a href="index.html#dec18">Patrulha Canina</a></li>
-                    <li><a href="index.html#dec19">Neon</a></li>
-                    <li><a href="index.html#dec20">Gamer</a></li>
-                    <li><a href="index.html#dec21">Super Mario</a></li>
-                    <li><a href="index.html#dec22">Sonic</a></li>
-                    <li><a href="index.html#dec23">Futebol</a></li>
-                    <li><a href="index.html#dec24">Galinha Pintadinha</a></li>
-                    <li><a href="index.html#dec25">Bolofofos</a></li>
-                    <li><a href="index.html#dec26">Lilo e Stitch</a></li>
-                    <li><a href="index.html#dec27">Pool Party</a></li>
-                    <li><a href="index.html#dec28">Tardezinha</a></li>
+                <ul class="menu-lista" id="menuCategoriasDinamico">
+                    <li style="padding: 10px;">Carregando temas...</li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main-content">
-        <div class="decorations-grid" id="catalogo">
-
-            <div class="decoracao-card" id="dec1">
-                <h3 class="decoracao-title">Jardim Encantado</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/jardimB.heic"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Jardim Encantado - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/jardimS.heic"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Jardim Encantado - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/jardimP.heic"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Jardim Encantado - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec2">
-                <h3 class="decoracao-title">Frozen</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/frozenB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Frozen - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/frozenS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Frozen - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/frozenP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Frozen - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec3">
-                <h3 class="decoracao-title">Bobbie Goods</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/bobbieB.heic"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Bobbie Goods - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/bobbieS.heic"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Bobbie Goods - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/bobbieP.heic"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Bobbie Goods - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec4">
-                <h3 class="decoracao-title">Dinossauro</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/dinoB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Dinossauro - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/dinoS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Dinossauro - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/dinoP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Dinossauro - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card rank-1" id="dec5">
-                <h3 class="decoracao-title">Minecraft</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/minecraftB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Minecraft - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/minecraftS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Minecraft - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/minecraftP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Minecraft - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec6">
-                <h3 class="decoracao-title">Casa da Gabby</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/gabbyB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Casa da Gabby - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/gabbyS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Casa da Gabby - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/gabbyP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Casa da Gabby - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec7">
-                <h3 class="decoracao-title">Astronauta</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/astronautaB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Astronauta - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/astronautaS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Astronauta - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/astronautaP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Astronauta - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card rank-1" id="dec8">
-                <h3 class="decoracao-title">Roblox</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/robloxB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Roblox - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/robloxS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Roblox - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/robloxP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Roblox - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec9">
-                <h3 class="decoracao-title">Arraial</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/arraiaB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Arraial - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/arraiaS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Arraial - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/arraiaP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Arraial - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card rank-1" id="dec10">
-                <h3 class="decoracao-title">Hot Wheels</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/hotwheelsB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Hot Wheels - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/hotwheelsS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Hot Wheels - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/hotwheelsP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Hot Wheels - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card rank-1" id="dec11">
-                <h3 class="decoracao-title">Stitch</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/stitchDB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Stitch - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/stitchDS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Stitch - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/stitchDP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Stitch - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec12">
-                <h3 class="decoracao-title">Minnie</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/minieB.jpg"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Minnie - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/minieS.jpg"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Minnie - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/minieP.jpg"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Minnie - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec13">
-                <h3 class="decoracao-title">Safári</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/safariB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Safári - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/safariS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Safári - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/safariP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Safári - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec14">
-                <h3 class="decoracao-title">Chá Revelação (Mod. 2)</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/cha2B.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Chá Revelação (Mod. 2) - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/cha2S.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Chá Revelação (Mod. 2) - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/cha2P.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Chá Revelação (Mod. 2) - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec15">
-                <h3 class="decoracao-title">Chá Revelação (Mod. 1)</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/cha1B.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Chá Revelação (Mod. 1) - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/cha1S.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Chá Revelação (Mod. 1) - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/cha1P.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Chá Revelação (Mod. 1) - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec16">
-                <h3 class="decoracao-title">Boteco</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/botecoB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Boteco - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/botecoS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Boteco - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/botecoP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Boteco - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec17">
-                <h3 class="decoracao-title">Homem-Aranha</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/aranhaB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Homem-Aranha - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/aranhaS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Homem-Aranha - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/aranhaP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Homem-Aranha - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec18">
-                <h3 class="decoracao-title">Patrulha Canina</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/patrulhaB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Patrulha Canina - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/patrulhaS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Patrulha Canina - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/patrulhaP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Patrulha Canina - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec19">
-                <h3 class="decoracao-title">Neon</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/neonB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Neon - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/neonS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Neon - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/neonP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Neon - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec20">
-                <h3 class="decoracao-title">Gamer</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/gamerB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Gamer - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/gamerS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Gamer - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/gamerP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Gamer - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec21">
-                <h3 class="decoracao-title">Super Mario</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/marioB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Super Mario - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/marioS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Super Mario - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/marioP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Super Mario - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec22">
-                <h3 class="decoracao-title">Sonic</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/sonicB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Sonic - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/sonicS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Sonic - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/sonicP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Sonic - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec23">
-                <h3 class="decoracao-title">Futebol</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/futB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Futebol - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/futS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Futebol - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/futP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Futebol - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec24">
-                <h3 class="decoracao-title">Galinha Pintadinha</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/galinhaB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Galinha Pintadinha - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/galinhaS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Galinha Pintadinha - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/galinhaP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Galinha Pintadinha - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec25">
-                <h3 class="decoracao-title">Bolofofos</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/boloB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Bolofofos - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/BoloS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Bolofofos - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/boloP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Bolofofos - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec26">
-                <h3 class="decoracao-title">Lilo e Stitch</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/liloB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Lilo e Stitch - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/liloS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Lilo e Stitch - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/liloP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Lilo e Stitch - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec27">
-                <h3 class="decoracao-title">Pool Party</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/poolB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Pool Party - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/poolS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Pool Party - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/poolP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Pool Party - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="decoracao-card" id="dec28">
-                <h3 class="decoracao-title">Tardezinha</h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn btn-prev">❮</button>
-                    <button class="carousel-btn btn-next">❯</button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="imagem/tardeB.webp"></div><div class="info-container"><p class="price-tag">R$ 99</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Tardezinha - Básico (R$99)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="imagem/tardeS.webp"></div><div class="info-container"><p class="price-tag">R$ 129</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Tardezinha - Standard (R$129)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                        <div class="carousel-slide"><div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="imagem/tardeP.webp"></div><div class="info-container"><p class="price-tag">R$ 149</p><a href="#" class="whatsapp-btn" data-message="Olá! Gostaria da Decoração Tardezinha - Premium (R$149)" target="_blank"><span>📱</span> Quero esse</a></div></div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="decorations-grid" id="catalogoDinamico">
+            <h3 style="grid-column: 1/-1; text-align: center; color: var(--cor-roxo-medio); margin-top: 50px;">
+                Carregando nosso catálogo mágico... ✨
+            </h3>
         </div>
+
         <a href="#" class="floating-btn" id="floatingWhatsapp" data-message="Olá! Gostaria de falar com um atendente para tirar algumas dúvidas.">
-        <span>💬</span> Falar com atendente
-    </a>
-    <div id="imageModal" class="modal">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="expandedImg">
-    </div>
+            <span>💬</span> Falar com atendente
+        </a>
+
+        <div id="imageModal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="expandedImg">
+        </div>
     </main>
+
     <footer class="site-footer" id="contato">
-            <div class="footer-container">
-                
-                <div class="footer-content">
-                    <div class="footer-secao sobre">
-                        <h2 class="footer-logo">Sua Festa Inesquecível</h2>
-                        <p>Kits lindos, práticos e completos no sistema Pegue e Monte. A solução perfeita e econômica para a sua festa!</p>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-secao sobre">
+                    <h2 class="footer-logo">Sua Festa Inesquecível</h2>
+                    <p>Kits lindos, práticos e completos no sistema Pegue e Monte. A solução perfeita e econômica para a sua festa!</p>
                 </div>
-                    
-                    <div class="footer-secao contatos">
-                        <h3>Fale Diretamente</h3>
-                        <p><span>📱</span> WhatsApp: (19) 99920-8659</p>
-                        <p><span>📧</span> decorafest.25@gmail.com</p>
-                        <p><span>📍</span> Atendemos Estiva Gerbi e Região</p>
-                    </div>
-
-                    <div class="footer-secao redes-sociais">
-                        <h3>Siga Nosso Brilho</h3>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com/_.decorafest/?hl=pt-br" target="_blank" class="icon-instagram" title="Instagram">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-                            </a>
-                            <a href="https://wa.me/5519999208659?text=Olá!%20Estava%20vendo%20o%20catálogo%20e%20gostaria%20de%20tirar%20umas%20dúvidas." target="_blank" class="icon-whatsapp" title="WhatsApp">
-                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                <div class="footer-secao contatos">
+                    <h3>Fale Diretamente</h3>
+                    <p><span>📱</span> WhatsApp: (19) 99920-8659</p>
+                    <p><span>📧</span> decorafest.25@gmail.com</p>
+                    <p><span>📍</span> Atendemos Estiva Gerbi e Região</p>
+                </div>
+                <div class="footer-secao redes-sociais">
+                    <h3>Siga Nosso Brilho</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_.decorafest/?hl=pt-br" target="_blank" class="icon-instagram" title="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
                         </a>
-                        </div>
+                        <a href="https://wa.me/5519999208659?text=Olá!%20Estava%20vendo%20o%20catálogo%20e%20gostaria%20de%20tirar%20umas%20dúvidas." target="_blank" class="icon-whatsapp" title="WhatsApp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </a>
                     </div>
                 </div>
-
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Sua Festa Inesquecível. Todos os direitos reservados.</p>
-                    <p class="desenvolvido">Desenvolvido com carinho 💖</p>
-                </div>
-                
             </div>
-        </footer>
-    <script>
-        // CONFIGURAÇÃO DE WHATSAPP
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sua Festa Inesquecível. Todos os direitos reservados.</p>
+                <p class="desenvolvido">Desenvolvido com carinho 💖</p>
+            </div>
+        </div>
+    </footer>
 
-        
+    <script>
         const MEU_NUMERO = "5519999208659"; 
-        // Código para o botão flutuante usar o mesmo número
+
+        // 1. Configura botão flutuante
         const btnFlutuante = document.getElementById('floatingWhatsapp');
         if(btnFlutuante) {
             const msgFlutuante = btnFlutuante.getAttribute('data-message');
             btnFlutuante.href = `https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(msgFlutuante)}`;
         }
-        // ==========================================
 
-        // Script para adicionar o número e a mensagem nos botões
-        const whatsappBtns = document.querySelectorAll('.whatsapp-btn');
-        whatsappBtns.forEach(btn => {
-            const mensagem = btn.getAttribute('data-message');
-            btn.href = `https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(mensagem)}`;
-        });
-
-        // Script do Menu
+        // 2. Configura Menu Dropdown
         const togglerBtn = document.getElementById('menuToggler');
         const menuDropdown = document.getElementById('menuDropdown');
-        const menuLinks = document.querySelectorAll('.menu-lista a');
-
+        
         togglerBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             menuDropdown.classList.toggle('show');
         });
-
         document.addEventListener('click', (e) => {
-            if (!menuToggler.contains(e.target) && !menuDropdown.contains(e.target)) {
+            if (!togglerBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
                 menuDropdown.classList.remove('show');
             }
         });
 
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menuDropdown.classList.remove('show');
-            });
-        });
-
-        // Script do Carrossel de Imagens
-        const carousels = document.querySelectorAll('.decoracao-card');
-        carousels.forEach(card => {
-            const track = card.querySelector('.carousel-track');
-            const slides = card.querySelectorAll('.carousel-slide');
-            const btnNext = card.querySelector('.btn-next');
-            const btnPrev = card.querySelector('.btn-prev');
-            let currentIndex = 0;
-            const totalSlides = slides.length; 
-
-            function updateCarousel() {
-                track.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            btnNext.addEventListener('click', () => {
-                currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-                updateCarousel();
-            });
-
-            btnPrev.addEventListener('click', () => {
-                currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
-                updateCarousel();
-            });
-        });
-        
         // ==========================================
-        // SCRIPT DO MODAL DE IMAGEM (LIGHTBOX)
+        // 3. MOTOR QUE GERA OS CARTÕES AUTOMATICAMENTE
         // ==========================================
-        const modal = document.getElementById("imageModal");
-        const modalImg = document.getElementById("expandedImg");
-        const fecharModal = document.querySelector(".close-modal");
+        fetch('dados/decoracoes.json')
+            .then(res => res.json())
+            .then(data => {
+                const itens = data.itens || [];
+                const grid = document.getElementById('catalogoDinamico');
+                const menu = document.getElementById('menuCategoriasDinamico');
 
-        // Seleciona todas as imagens dentro dos cards
-        const todasAsImagens = document.querySelectorAll('.img-wrapper img');
+                if(itens.length === 0) {
+                    grid.innerHTML = '<h3 style="grid-column: 1/-1; text-align: center; color: var(--cor-roxo-medio); margin-top: 50px;">Ainda não há decorações. Acesse /admin para cadastrar!</h3>';
+                    menu.innerHTML = '<li><a href="#">Sem categorias</a></li>';
+                    return;
+                }
 
-        todasAsImagens.forEach(img => {
-            img.addEventListener('click', function() {
-                modal.style.display = "flex"; // Abre o popup
-                modalImg.src = this.src; // Copia a imagem exata que o cliente clicou
+                let gridHTML = '';
+                let menuHTML = '';
+
+                // Monta o HTML de cada item cadastrado no painel
+                itens.forEach((item, index) => {
+                    const idCard = `dec${index + 1}`;
+                    const classeRank = item.rank ? `rank-${item.rank}` : '';
+
+                    // Adiciona no Menu
+                    menuHTML += `<li><a href="#${idCard}">${item.titulo}</a></li>`;
+
+                    // Adiciona o Cartão
+                    gridHTML += `
+                    <div class="decoracao-card ${classeRank}" id="${idCard}">
+                        <h3 class="decoracao-title">${item.titulo}</h3>
+                        <div class="carousel-container">
+                            <button class="carousel-btn btn-prev">❮</button>
+                            <button class="carousel-btn btn-next">❯</button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="${item.imgB}"></div>
+                                    <div class="info-container"><p class="price-tag">R$ ${item.precoB}</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Básico (R$${item.precoB})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="${item.imgS}"></div>
+                                    <div class="info-container"><p class="price-tag">R$ ${item.precoS}</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Standard (R$${item.precoS})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="${item.imgP}"></div>
+                                    <div class="info-container"><p class="price-tag">R$ ${item.precoP}</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Premium (R$${item.precoP})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                });
+
+                grid.innerHTML = gridHTML;
+                menu.innerHTML = menuHTML;
+
+                // Ativa os Carrosséis e o Menu que acabaram de nascer
+                iniciarCarrosseis();
+                iniciarLightbox();
+                
+                const menuLinks = document.querySelectorAll('.menu-lista a');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', () => menuDropdown.classList.remove('show'));
+                });
+            })
+            .catch(err => console.log('Erro ao ler decorações:', err));
+
+        // ==========================================
+        // 4. FUNÇÕES DE FUNCIONAMENTO
+        // ==========================================
+        function iniciarCarrosseis() {
+            const carousels = document.querySelectorAll('.decoracao-card');
+            carousels.forEach(card => {
+                const track = card.querySelector('.carousel-track');
+                const slides = card.querySelectorAll('.carousel-slide');
+                const btnNext = card.querySelector('.btn-next');
+                const btnPrev = card.querySelector('.btn-prev');
+                let currentIndex = 0;
+                const totalSlides = slides.length; 
+
+                function updateCarousel() { track.style.transform = `translateX(-${currentIndex * 100}%)`; }
+
+                btnNext.addEventListener('click', () => {
+                    currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+                    updateCarousel();
+                });
+                btnPrev.addEventListener('click', () => {
+                    currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+                    updateCarousel();
+                });
             });
-        });
+        }
 
-        // Fecha o popup ao clicar no "X"
-        fecharModal.addEventListener('click', function() {
-            modal.style.display = "none";
-        });
+        function iniciarLightbox() {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("expandedImg");
+            const fecharModal = document.querySelector(".close-modal");
+            const todasAsImagens = document.querySelectorAll('.img-wrapper img');
 
-        // Fecha o popup se o cliente clicar fora da imagem (no fundo escuro)
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                modal.style.display = "none";
-            }
-        });
+            todasAsImagens.forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = "flex"; 
+                    modalImg.src = this.src; 
+                });
+            });
+
+            fecharModal.addEventListener('click', () => modal.style.display = "none");
+            modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = "none"; });
+        }
+
+        // Script necessário para o login do Netlify funcionar certinho
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+                }
+            });
+        }
     </script>
 </body>
 </html>
