@@ -7,7 +7,8 @@
       "precoS": "129",
       "imgS": "imagem/jardimS.heic",
       "precoP": "149",
-      "imgP": "imagem/jardimP.heic"
+      "imgP": "imagem/jardimP.heic",
+      "rank": "0"
     },
     {
       "titulo": "Frozen",
@@ -16,7 +17,8 @@
       "precoS": "129",
       "imgS": "imagem/frozenS.jpg",
       "precoP": "149",
-      "imgP": "imagem/frozenP.jpg"
+      "imgP": "imagem/frozenP.jpg",
+      "rank": "-10"
     },
     {
       "titulo": "Bobbie Goods",
@@ -25,7 +27,8 @@
       "precoS": "129",
       "imgS": "imagem/bobbieS.heic",
       "precoP": "149",
-      "imgP": "imagem/bobbieP.heic"
+      "imgP": "imagem/bobbieP.heic",
+      "rank": "-10"
     },
     {
       "titulo": "Dinossauro",
@@ -34,7 +37,8 @@
       "precoS": "129",
       "imgS": "imagem/dinoS.jpg",
       "precoP": "149",
-      "imgP": "imagem/dinoP.jpg"
+      "imgP": "imagem/dinoP.jpg",
+      "rank": "-10"
     },
     {
       "titulo": "Minecraft",
@@ -53,7 +57,8 @@
       "precoS": "129",
       "imgS": "imagem/gabbyS.jpg",
       "precoP": "149",
-      "imgP": "imagem/gabbyP.jpg"
+      "imgP": "imagem/gabbyP.jpg",
+      "rank": "-10"
     },
     {
       "titulo": "Astronauta",
@@ -62,7 +67,8 @@
       "precoS": "129",
       "imgS": "imagem/astronautaS.jpg",
       "precoP": "149",
-      "imgP": "imagem/astronautaP.jpg"
+      "imgP": "imagem/astronautaP.jpg",
+      "rank": "-10"
     },
     {
       "titulo": "Roblox",
@@ -81,7 +87,8 @@
       "precoS": "129",
       "imgS": "imagem/arraiaS.jpg",
       "precoP": "149",
-      "imgP": "imagem/arraiaP.jpg"
+      "imgP": "imagem/arraiaP.jpg",
+      "rank": "0"
     },
     {
       "titulo": "Hot Wheels",
@@ -110,7 +117,8 @@
       "precoS": "129",
       "imgS": "imagem/minieS.jpg",
       "precoP": "149",
-      "imgP": "imagem/minieP.jpg"
+      "imgP": "imagem/minieP.jpg",
+      "rank": "0"
     },
     {
       "titulo": "Safári",
@@ -119,7 +127,8 @@
       "precoS": "129",
       "imgS": "imagem/safariS.webp",
       "precoP": "149",
-      "imgP": "imagem/safariP.webp"
+      "imgP": "imagem/safariP.webp",
+      "rank": "10"
     },
     {
       "titulo": "Chá Revelação (Mod. 2)",
@@ -128,7 +137,8 @@
       "precoS": "129",
       "imgS": "imagem/cha2S.webp",
       "precoP": "149",
-      "imgP": "imagem/cha2P.webp"
+      "imgP": "imagem/cha2P.webp",
+      "rank": "10"
     },
     {
       "titulo": "Chá Revelação (Mod. 1)",
@@ -137,7 +147,8 @@
       "precoS": "129",
       "imgS": "imagem/cha1S.webp",
       "precoP": "149",
-      "imgP": "imagem/cha1P.webp"
+      "imgP": "imagem/cha1P.webp",
+      "rank": "10"
     },
     {
       "titulo": "Boteco",
@@ -146,7 +157,8 @@
       "precoS": "129",
       "imgS": "imagem/botecoS.webp",
       "precoP": "149",
-      "imgP": "imagem/botecoP.webp"
+      "imgP": "imagem/botecoP.webp",
+      "rank": "10"
     },
     {
       "titulo": "Homem-Aranha",
@@ -155,7 +167,8 @@
       "precoS": "129",
       "imgS": "imagem/aranhaS.webp",
       "precoP": "149",
-      "imgP": "imagem/aranhaP.webp"
+      "imgP": "imagem/aranhaP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Patrulha Canina",
@@ -164,7 +177,8 @@
       "precoS": "129",
       "imgS": "imagem/patrulhaS.webp",
       "precoP": "149",
-      "imgP": "imagem/patrulhaP.webp"
+      "imgP": "imagem/patrulhaP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Neon",
@@ -173,7 +187,8 @@
       "precoS": "129",
       "imgS": "imagem/neonS.webp",
       "precoP": "149",
-      "imgP": "imagem/neonP.webp"
+      "imgP": "imagem/neonP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Gamer",
@@ -182,7 +197,8 @@
       "precoS": "129",
       "imgS": "imagem/gamerS.webp",
       "precoP": "149",
-      "imgP": "imagem/gamerP.webp"
+      "imgP": "imagem/gamerP.webp",
+      "rank": "10"
     },
     {
       "titulo": "Super Mario",
@@ -191,7 +207,8 @@
       "precoS": "129",
       "imgS": "imagem/marioS.webp",
       "precoP": "149",
-      "imgP": "imagem/marioP.webp"
+      "imgP": "imagem/marioP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Sonic",
@@ -200,7 +217,8 @@
       "precoS": "129",
       "imgS": "imagem/sonicS.webp",
       "precoP": "149",
-      "imgP": "imagem/sonicP.webp"
+      "imgP": "imagem/sonicP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Futebol",
@@ -209,7 +227,8 @@
       "precoS": "129",
       "imgS": "imagem/futS.webp",
       "precoP": "149",
-      "imgP": "imagem/futP.webp"
+      "imgP": "imagem/futP.webp",
+      "rank": "10"
     },
     {
       "titulo": "Galinha Pintadinha",
@@ -218,7 +237,8 @@
       "precoS": "129",
       "imgS": "imagem/galinhaS.webp",
       "precoP": "149",
-      "imgP": "imagem/galinhaP.webp"
+      "imgP": "imagem/galinhaP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Bolofofos",
@@ -227,7 +247,8 @@
       "precoS": "129",
       "imgS": "imagem/BoloS.webp",
       "precoP": "149",
-      "imgP": "imagem/boloP.webp"
+      "imgP": "imagem/boloP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Lilo e Stitch",
@@ -236,7 +257,8 @@
       "precoS": "129",
       "imgS": "imagem/liloS.webp",
       "precoP": "149",
-      "imgP": "imagem/liloP.webp"
+      "imgP": "imagem/liloP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Pool Party",
@@ -245,7 +267,8 @@
       "precoS": "129",
       "imgS": "imagem/poolS.webp",
       "precoP": "149",
-      "imgP": "imagem/poolP.webp"
+      "imgP": "imagem/poolP.webp",
+      "rank": "0"
     },
     {
       "titulo": "Tardezinha",
@@ -254,11 +277,12 @@
       "precoS": "129",
       "imgS": "imagem/tardeS.webp",
       "precoP": "149",
-      "imgP": "imagem/tardeP.webp"
+      "imgP": "imagem/tardeP.webp",
+      "rank": "0"
     },
     {
-      "titulo": "Teste Tema",
-      "rank": -5,
+      "titulo": "TEMA TESTE",
+      "rank": "-10",
       "precoB": "99",
       "imgB": "https://placehold.co/600x400",
       "precoS": "129",
