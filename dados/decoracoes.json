@@ -1,0 +1,260 @@
+{
+  "itens": [
+    {
+      "titulo": "Jardim Encantado",
+      "precoB": "99",
+      "imgB": "imagem/jardimB.heic",
+      "precoS": "129",
+      "imgS": "imagem/jardimS.heic",
+      "precoP": "149",
+      "imgP": "imagem/jardimP.heic"
+    },
+    {
+      "titulo": "Frozen",
+      "precoB": "99",
+      "imgB": "imagem/frozenB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/frozenS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/frozenP.jpg"
+    },
+    {
+      "titulo": "Bobbie Goods",
+      "precoB": "99",
+      "imgB": "imagem/bobbieB.heic",
+      "precoS": "129",
+      "imgS": "imagem/bobbieS.heic",
+      "precoP": "149",
+      "imgP": "imagem/bobbieP.heic"
+    },
+    {
+      "titulo": "Dinossauro",
+      "precoB": "99",
+      "imgB": "imagem/dinoB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/dinoS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/dinoP.jpg"
+    },
+    {
+      "titulo": "Minecraft",
+      "rank": 1,
+      "precoB": "99",
+      "imgB": "imagem/minecraftB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/minecraftS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/minecraftP.jpg"
+    },
+    {
+      "titulo": "Casa da Gabby",
+      "precoB": "99",
+      "imgB": "imagem/gabbyB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/gabbyS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/gabbyP.jpg"
+    },
+    {
+      "titulo": "Astronauta",
+      "precoB": "99",
+      "imgB": "imagem/astronautaB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/astronautaS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/astronautaP.jpg"
+    },
+    {
+      "titulo": "Roblox",
+      "rank": 1,
+      "precoB": "99",
+      "imgB": "imagem/robloxB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/robloxS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/robloxP.jpg"
+    },
+    {
+      "titulo": "Arraial",
+      "precoB": "99",
+      "imgB": "imagem/arraiaB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/arraiaS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/arraiaP.jpg"
+    },
+    {
+      "titulo": "Hot Wheels",
+      "rank": 1,
+      "precoB": "99",
+      "imgB": "imagem/hotwheelsB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/hotwheelsS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/hotwheelsP.jpg"
+    },
+    {
+      "titulo": "Stitch",
+      "rank": 1,
+      "precoB": "99",
+      "imgB": "imagem/stitchDB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/stitchDS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/stitchDP.jpg"
+    },
+    {
+      "titulo": "Minnie",
+      "precoB": "99",
+      "imgB": "imagem/minieB.jpg",
+      "precoS": "129",
+      "imgS": "imagem/minieS.jpg",
+      "precoP": "149",
+      "imgP": "imagem/minieP.jpg"
+    },
+    {
+      "titulo": "Safári",
+      "precoB": "99",
+      "imgB": "imagem/safariB.webp",
+      "precoS": "129",
+      "imgS": "imagem/safariS.webp",
+      "precoP": "149",
+      "imgP": "imagem/safariP.webp"
+    },
+    {
+      "titulo": "Chá Revelação (Mod. 2)",
+      "precoB": "99",
+      "imgB": "imagem/cha2B.webp",
+      "precoS": "129",
+      "imgS": "imagem/cha2S.webp",
+      "precoP": "149",
+      "imgP": "imagem/cha2P.webp"
+    },
+    {
+      "titulo": "Chá Revelação (Mod. 1)",
+      "precoB": "99",
+      "imgB": "imagem/cha1B.webp",
+      "precoS": "129",
+      "imgS": "imagem/cha1S.webp",
+      "precoP": "149",
+      "imgP": "imagem/cha1P.webp"
+    },
+    {
+      "titulo": "Boteco",
+      "precoB": "99",
+      "imgB": "imagem/botecoB.webp",
+      "precoS": "129",
+      "imgS": "imagem/botecoS.webp",
+      "precoP": "149",
+      "imgP": "imagem/botecoP.webp"
+    },
+    {
+      "titulo": "Homem-Aranha",
+      "precoB": "99",
+      "imgB": "imagem/aranhaB.webp",
+      "precoS": "129",
+      "imgS": "imagem/aranhaS.webp",
+      "precoP": "149",
+      "imgP": "imagem/aranhaP.webp"
+    },
+    {
+      "titulo": "Patrulha Canina",
+      "precoB": "99",
+      "imgB": "imagem/patrulhaB.webp",
+      "precoS": "129",
+      "imgS": "imagem/patrulhaS.webp",
+      "precoP": "149",
+      "imgP": "imagem/patrulhaP.webp"
+    },
+    {
+      "titulo": "Neon",
+      "precoB": "99",
+      "imgB": "imagem/neonB.webp",
+      "precoS": "129",
+      "imgS": "imagem/neonS.webp",
+      "precoP": "149",
+      "imgP": "imagem/neonP.webp"
+    },
+    {
+      "titulo": "Gamer",
+      "precoB": "99",
+      "imgB": "imagem/gamerB.webp",
+      "precoS": "129",
+      "imgS": "imagem/gamerS.webp",
+      "precoP": "149",
+      "imgP": "imagem/gamerP.webp"
+    },
+    {
+      "titulo": "Super Mario",
+      "precoB": "99",
+      "imgB": "imagem/marioB.webp",
+      "precoS": "129",
+      "imgS": "imagem/marioS.webp",
+      "precoP": "149",
+      "imgP": "imagem/marioP.webp"
+    },
+    {
+      "titulo": "Sonic",
+      "precoB": "99",
+      "imgB": "imagem/sonicB.webp",
+      "precoS": "129",
+      "imgS": "imagem/sonicS.webp",
+      "precoP": "149",
+      "imgP": "imagem/sonicP.webp"
+    },
+    {
+      "titulo": "Futebol",
+      "precoB": "99",
+      "imgB": "imagem/futB.webp",
+      "precoS": "129",
+      "imgS": "imagem/futS.webp",
+      "precoP": "149",
+      "imgP": "imagem/futP.webp"
+    },
+    {
+      "titulo": "Galinha Pintadinha",
+      "precoB": "99",
+      "imgB": "imagem/galinhaB.webp",
+      "precoS": "129",
+      "imgS": "imagem/galinhaS.webp",
+      "precoP": "149",
+      "imgP": "imagem/galinhaP.webp"
+    },
+    {
+      "titulo": "Bolofofos",
+      "precoB": "99",
+      "imgB": "imagem/boloB.webp",
+      "precoS": "129",
+      "imgS": "imagem/BoloS.webp",
+      "precoP": "149",
+      "imgP": "imagem/boloP.webp"
+    },
+    {
+      "titulo": "Lilo e Stitch",
+      "precoB": "99",
+      "imgB": "imagem/liloB.webp",
+      "precoS": "129",
+      "imgS": "imagem/liloS.webp",
+      "precoP": "149",
+      "imgP": "imagem/liloP.webp"
+    },
+    {
+      "titulo": "Pool Party",
+      "precoB": "99",
+      "imgB": "imagem/poolB.webp",
+      "precoS": "129",
+      "imgS": "imagem/poolS.webp",
+      "precoP": "149",
+      "imgP": "imagem/poolP.webp"
+    },
+    {
+      "titulo": "Tardezinha",
+      "precoB": "99",
+      "imgB": "imagem/tardeB.webp",
+      "precoS": "129",
+      "imgS": "imagem/tardeS.webp",
+      "precoP": "149",
+      "imgP": "imagem/tardeP.webp"
+    }
+  ]
+}
