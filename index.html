@@ -21,7 +21,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1974459629775944&ev=PageView&noscript=1"/></noscript>
-    </head>
+</head>
 <body>
     <header class="navbar">
         <div class="logo-area">
@@ -67,7 +67,7 @@
         </div>
     </main>
 
-    <footer class="site-footer" id="contato">
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-secao sobre">
@@ -84,11 +84,11 @@
                     <h3>Siga Nosso Brilho</h3>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/_.decorafest/?hl=pt-br" target="_blank" class="icon-instagram" title="Instagram">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
                         </a>
                         <a href="https://wa.me/5519999208659?text=Olá!%20Estava%20vendo%20o%20catálogo%20e%20gostaria%20de%20tirar%20umas%20dúvidas." target="_blank" class="icon-whatsapp" title="WhatsApp">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                    </a>
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,15 @@
     </footer>
 
     <script>
+        // ==========================================
+        // CONFIGURAÇÕES GERAIS
+        // ==========================================
         const MEU_NUMERO = "5519999208659"; 
+        
+        // Alterar preços
+        const VALOR_BASICO = "99";
+        const VALOR_STANDARD = "129";
+        const VALOR_PREMIUM = "149";
 
         // 1. Configura botão flutuante
         const btnFlutuante = document.getElementById('floatingWhatsapp');
@@ -113,19 +121,19 @@
         const togglerBtn = document.getElementById('menuToggler');
         const menuDropdown = document.getElementById('menuDropdown');
         
-        togglerBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            menuDropdown.classList.toggle('show');
-        });
-        document.addEventListener('click', (e) => {
-            if (!togglerBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
-                menuDropdown.classList.remove('show');
-            }
-        });
+        if(togglerBtn) {
+            togglerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menuDropdown.classList.toggle('show');
+            });
+            document.addEventListener('click', (e) => {
+                if (!togglerBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
+                    menuDropdown.classList.remove('show');
+                }
+            });
+        }
 
-        // ==========================================
-        // 3. MOTOR QUE GERA OS CARTÕES AUTOMATICAMENTE
-        // ==========================================
+        // 3. MOTOR DO CATÁLOGO
         fetch('dados/decoracoes.json')
             .then(res => res.json())
             .then(data => {
@@ -156,15 +164,24 @@
                             <div class="carousel-track">
                                 <div class="carousel-slide">
                                     <div class="img-wrapper"><span class="style-label label-basico">Básico</span><img src="${item.imgB}"></div>
-                                    <div class="info-container"><p class="price-tag">R$ 99</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Básico (R$99)`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                    <div class="info-container">
+                                        <p class="price-tag">R$ ${VALOR_BASICO}</p>
+                                        <a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Básico (R$${VALOR_BASICO})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a>
+                                    </div>
                                 </div>
                                 <div class="carousel-slide">
                                     <div class="img-wrapper"><span class="style-label label-standard">Standard</span><img src="${item.imgS}"></div>
-                                    <div class="info-container"><p class="price-tag">R$ 129</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Standard (R$129)`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                    <div class="info-container">
+                                        <p class="price-tag">R$ ${VALOR_STANDARD}</p>
+                                        <a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Standard (R$${VALOR_STANDARD})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a>
+                                    </div>
                                 </div>
                                 <div class="carousel-slide">
                                     <div class="img-wrapper"><span class="style-label label-premium">Premium</span><img src="${item.imgP}"></div>
-                                    <div class="info-container"><p class="price-tag">R$ 149</p><a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Premium (R$149)`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a></div>
+                                    <div class="info-container">
+                                        <p class="price-tag">R$ ${VALOR_PREMIUM}</p>
+                                        <a href="https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(`Olá! Gostaria da Decoração ${item.titulo} - Premium (R$${VALOR_PREMIUM})`)}" class="whatsapp-btn" target="_blank"><span>📱</span> Quero esse</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -178,9 +195,6 @@
                 iniciarLightbox();
             });
 
-        // ==========================================
-        // 4. FUNÇÕES DE FUNCIONAMENTO
-        // ==========================================
         function iniciarCarrosseis() {
             const carousels = document.querySelectorAll('.decoracao-card');
             carousels.forEach(card => {
@@ -208,20 +222,18 @@
             const modal = document.getElementById("imageModal");
             const modalImg = document.getElementById("expandedImg");
             const fecharModal = document.querySelector(".close-modal");
-            const todasAsImagens = document.querySelectorAll('.img-wrapper img');
-
-            todasAsImagens.forEach(img => {
-                img.addEventListener('click', function() {
+            
+            document.addEventListener('click', (e) => {
+                if(e.target.tagName === 'IMG' && e.target.closest('.img-wrapper')) {
                     modal.style.display = "flex"; 
-                    modalImg.src = this.src; 
-                });
+                    modalImg.src = e.target.src; 
+                }
             });
 
-            fecharModal.addEventListener('click', () => modal.style.display = "none");
-            modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = "none"; });
+            if(fecharModal) fecharModal.addEventListener('click', () => modal.style.display = "none");
+            if(modal) modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = "none"; });
         }
 
-        // Script necessário para o login do Netlify funcionar certinho
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
                 if (!user) {
