@@ -279,16 +279,6 @@
       "precoP": "149",
       "imgP": "imagem/tardeP.webp",
       "rank": "0"
-    },
-    {
-      "titulo": "TEMA TESTE",
-      "rank": "-10",
-      "precoB": "99",
-      "imgB": "https://placehold.co/600x400",
-      "precoS": "129",
-      "precoP": "149",
-      "imgS": "https://placehold.co/600x400",
-      "imgP": "https://placehold.co/600x400"
     }
   ]
 }
