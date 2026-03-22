@@ -255,6 +255,16 @@
       "imgS": "imagem/tardeS.webp",
       "precoP": "149",
       "imgP": "imagem/tardeP.webp"
+    },
+    {
+      "titulo": "Teste Tema",
+      "rank": -5,
+      "precoB": "99",
+      "imgB": "https://placehold.co/600x400",
+      "precoS": "129",
+      "precoP": "149",
+      "imgS": "https://placehold.co/600x400",
+      "imgP": "https://placehold.co/600x400"
     }
   ]
 }
