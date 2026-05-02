@@ -251,13 +251,17 @@ body {
 .img-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 3 / 4; 
+    height: 300px; /* Trava a altura absoluta. Pode aumentar ou diminuir esse valor se quiser! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Corta qualquer pedaço da foto que tentar vazar */
 }
 .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    cursor: zoom-in; /* Cursor Lightbox */
+    object-fit: cover; /* preenche a caixa inteira sem achatar a foto */
+    cursor: zoom-in;
 }
 
 .style-label {
@@ -307,6 +311,7 @@ body {
     align-items: center;
     gap: 10px;
     border-top: 1px solid var(--cor-fundo-offwhite);
+    margin-top: auto;
 }
 .price-tag {
     font-size: 1.3rem;
@@ -395,7 +400,7 @@ body {
 .close-modal:hover { color: var(--cor-rosa-claro); }
 
 /* ==========================================
-   RODAPÉ (FOOTER PREMIUM) - Usando suas cores!
+   RODAPÉ (FOOTER PREMIUM)
    ========================================== */
 .site-footer {
     background: linear-gradient(135deg, var(--cor-roxo-medio) 0%, var(--cor-lilas-claro) 100%); 
